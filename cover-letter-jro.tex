@@ -1,0 +1,79 @@
+\documentclass[letterpaper]{letter}
+\usepackage{anysize}
+\marginsize{1.25in}{1.25in}{0.5in}{0.5in}
+\usepackage{setspace}
+\usepackage{url}
+\usepackage{verbatim}
+\usepackage{parskip}
+\usepackage{hyperref}
+\hypersetup{pdfborder={0 0 0}, colorlinks=true, urlcolor=blue}
+
+\newcommand{\ignore}[1]{}
+\newcommand{\super}[1]{\ensuremath{^{\textrm{#1}}}}
+\newcommand{\sub}[1]{\ensuremath{_{\textrm{#1}}}}
+\newcommand{\dC}{\ensuremath{^\circ{\textrm{C}}}}
+
+\makeatletter
+\let\@texttop\relax
+\makeatother
+
+\newenvironment{myEnumerate}{
+  \begin{enumerate}
+    \setlength{\itemsep}{1pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}}
+  {\end{enumerate}}
+
+\newenvironment{myItemize}{
+  \begin{itemize}
+    \setlength{\itemsep}{1pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}}
+  {\end{itemize}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\signature{Jamie Oaks \\ 
+                 Biodiversity Institute \\ 
+                 University of Kansas \\ 
+                 Dyche Hall, 1345 Jayhawk Blvd \\ 
+                 Lawrence, KS 66045 \\ 
+                 \href{mailto:joaks1@ku.edu}{\texttt{joaks1@ku.edu}} \\ 
+                 785-864-3439}
+%\address{Biodiversity Institute \\ University of Kansas \\ Dyche Hall, 1345 Jayhawk Blvd \\ Lawrence, KS 66045}
+\begin{document}
+\begin{letter}{The Society for the Study of Evolution \\
+                     PO Box 299 \\
+                     St. Louis, MO 63166-0299}
+\opening{Dear Editor:}
+\raggedright
+I am submitting a manuscript entitled ``Evidence for climate-driven diversification? A caution for interpreting ABC inferences of simultaneous historical events'' to be considered for publication in the International Journal of Organic Evolution.
+The field of research is comparative biogeography and approximate Bayesian model selection.
+We will make all of the computer scripts, DNA sequences, and sequence alignments used in this study freely available on github ((\url{https://github.com/}), Dryad (\url{http://datadryad.org/}), and GenBank (\url{http://www.ncbi.nlm.nih.gov/genbank/}), respectively.
+
+In this paper, we demonstrate low power and bias in a widely used approximate Bayesian computation (ABC) method of model selection.
+The ABC method, msBayes, uses a hierarchical comparative model to infer the distribution of divergence times among co-distributed pairs of populations.
+Phylogeographers use this method to test whether certain historical biogeographical events caused diversification across multiple groups of organisms.
+Researchers have often found support for models in which co-distributed pairs of taxa diverged simultaneously, which has been interpreted as evidence for a shared historical divergence event.
+
+We use msBayes to test a prediction of the paradigm of Pleistocene-climate-driven diversification in the Philippines.
+Like many previous users of the method, we find strong support for 22 population pairs diverging recently and simultaneously.
+Instead of interpreting this result as validating predictions of the hypothesis of climate-driven diversification, we use extensive simulation-based power analyses to determine what support for ``simultaneous'' divergence really means in the context of ABC model selection.
+The results of our power analyses demonstrate that we were likely to infer a model of simultaneous divergence even if the divergence times of the 22 population pairs were randomly distributed over the past 2.5 million years.
+Thus, by focusing on a phylogeographic scale, researchers are biased towards infer the biologically interesting model of simultaneous divergence.
+
+We feel our paper will serve as an important caution for interpreting previous results of ABC model-selection procedures, and will help guide future work in developing and applying such methods.
+In the paper, we discuss several possible causes for the bias we revealed, as well as avenues to explore for mitigating the bias.
+
+The following scientists would be appropriate reviewers of the manuscript:
+Bryan Carstens (\href{mailto:carstens@lsu.edu}{\tt carstens@lsu.edu}),
+Mark Beaumont (\href{mailto:m.a.beaumont@reading.ac.uk}{\tt m.a.beaumont@reading.ac.uk}),
+L.\ Lacey Knowles (\href{knowlesl@umich.edu}{\tt knowlesl@umich.edu}),
+Craig Moritz (\href{mailto:craigm@berkeley.edu}{\tt craigm@berkeley.edu}), and
+Trina Roberts (\href{mailto:trina.roberts@duke.edu}{\tt trina.roberts@duke.edu}).
+I look forward to your correspondence regarding this submission.
+
+\addtolength{\medskipamount}{-5pt}
+\closing{Sincerely,}
+\end{letter}
+\end{document}
